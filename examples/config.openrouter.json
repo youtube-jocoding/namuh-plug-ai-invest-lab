@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "start": "2024-02-01T00:00:00Z",
+  "end": "2024-02-15T23:59:59Z",
+  "bars": "../data/bars.csv",
+  "sessions": "../data/sessions.csv",
+  "data_declaration": "unadjusted_no_actions_confirmed",
+  "warmup_bars": 20,
+  "max_positions": 10,
+  "max_orders": 20,
+  "decision_lead_seconds": 60,
+  "timeout_seconds": 180,
+  "max_output_tokens": 4096,
+  "max_prompt_bytes": 200000,
+  "liquidity_participation": "0.001",
+  "max_api_budget_usd": "50",
+  "credit_reserve_usd": "5",
+  "markets": {
+    "KR": {"currency": "KRW", "initial_cash": "10000000", "commission_bps": "1", "sell_tax_bps": "0", "slippage_bps": "2"},
+    "US": {"currency": "USD", "initial_cash": "10000", "commission_bps": "1", "sell_tax_bps": "0", "slippage_bps": "2"}
+  },
+  "participants": [
+    {"name": "Model1", "kind": "openrouter", "model": "REPLACE_WITH_EXACT_ID", "provider": "REPLACE_WITH_SLUG", "provider_name": "REPLACE_WITH_RESPONSE_NAME"},
+    {"name": "Model2", "kind": "openrouter", "model": "REPLACE_WITH_EXACT_ID", "provider": "REPLACE_WITH_SLUG", "provider_name": "REPLACE_WITH_RESPONSE_NAME"},
+    {"name": "Model3", "kind": "openrouter", "model": "REPLACE_WITH_EXACT_ID", "provider": "REPLACE_WITH_SLUG", "provider_name": "REPLACE_WITH_RESPONSE_NAME"},
+    {"name": "Model4", "kind": "openrouter", "model": "REPLACE_WITH_EXACT_ID", "provider": "REPLACE_WITH_SLUG", "provider_name": "REPLACE_WITH_RESPONSE_NAME"},
+    {"name": "Model5", "kind": "openrouter", "model": "REPLACE_WITH_EXACT_ID", "provider": "REPLACE_WITH_SLUG", "provider_name": "REPLACE_WITH_RESPONSE_NAME"},
+    {"name": "Model6", "kind": "openrouter", "model": "REPLACE_WITH_EXACT_ID", "provider": "REPLACE_WITH_SLUG", "provider_name": "REPLACE_WITH_RESPONSE_NAME"}
+  ]
+}

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "namuh-plug-ai-invest-lab"
+version = "0.1.0"
+description = "NAMUH Plug AI Invest Lab: auditable multi-model investment experiments"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+namuh-lab = "namuh_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["namuh_lab*"]
